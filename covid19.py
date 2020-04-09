@@ -1,7 +1,9 @@
 from gazpacho import get,Soup
 from pprint import pprint
 
-html=get('http://www.covid19.gov.ao')
+URL = 'http://www.covid19.gov.ao'
+
+html=get(URL)
 soup=Soup(html)
 
 numbers=soup.find('span',{'class':'big-number'})
