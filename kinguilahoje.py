@@ -1,7 +1,9 @@
 from gazpacho import get,Soup
 from pprint import pprint
 
-html=get('http://www.kinguilahoje.com/')
+URL='http://www.kinguilahoje.com/'
+
+html=get(URL)
 soup=Soup(html)
 
 quotations=soup.find('span',{'class':'quotation'})
